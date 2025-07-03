@@ -1,4 +1,4 @@
-const NumbersValidator = require("../../app/numbers_validator");
+import NumbersValidator from "../app/numbers_validator.mjs";
 import { expect } from "chai";
 
 describe("isNumberEven positive scenaries", function () {
