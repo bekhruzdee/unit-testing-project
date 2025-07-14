@@ -4,7 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "nyc npm run test"
   },
   "keywords": [
     "unit",
@@ -13,6 +14,9 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "nyc": {
+    "reporter": "html"
+  },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
     "@eslint/json": "^0.12.0",
@@ -20,6 +24,7 @@
     "eslint": "^9.30.1",
     "globals": "^16.3.0",
     "mocha": "^11.7.1",
-    "mochawesome": "^7.1.3"
+    "mochawesome": "^7.1.3",
+    "nyc": "^17.1.0"
   }
 }
